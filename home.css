@@ -1,0 +1,27 @@
+header input{
+    right: 5%;
+    top: 12%;
+}
+
+#enviar{
+    display: block;
+
+    position: absolute;
+    left: 65%;
+    top: 10%;
+}
+
+#enviar img{
+    height: 35px;
+    width: 35px;
+
+    display: block;
+    margin: auto;
+}
+
+#enviar p{
+    color: white;
+
+    display: block;    
+    margin:auto;
+}
