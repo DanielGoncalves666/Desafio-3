@@ -1,3 +1,5 @@
+/* Header*/
+
 header input{
     right: 5%;
     top: 12%;
@@ -9,6 +11,8 @@ header input{
     position: absolute;
     left: 65%;
     top: 10%;
+
+    background-color: #0B7373;
 }
 
 #enviar img{
@@ -24,4 +28,87 @@ header input{
 
     display: block;    
     margin:auto;
+}
+
+/*Section corpo*/
+#corpo{
+    height: 80%;
+    width: 50%;
+
+    position: absolute;
+    top: 12%;
+    left: 25%;
+
+    background-color:#192939;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.card{
+    width: 70%;
+    height: 80%;
+
+    background-color: #F2F2F2;
+
+    position: relative;
+    top: 10%;
+    left: 15%;
+
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+}
+
+.card img{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 200%;
+    
+
+    border-radius: 20px;
+    grid-row: 1;
+    grid-column-end: 2;
+}
+
+.card div img, p{
+    margin: 0px;
+    position: relative;
+    left: 5%;
+}
+
+.card div{
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.verReceita{
+    background-color: #0B7373;
+
+    grid-row: 2;
+    grid-column: 2;
+}
+
+/*Section Formulario*/
+
+#modal{
+    display: none;
+    background-color: rgba(134, 134, 134, 1);
+
+    height: 100vh;
+    width: 100vw;
+}
+
+#formulario{
+    height: 60vh;
+    width: 40vh;
+
+    position: absolute;
+    left: calc(50% - 20vh);
+    top: calc(50% - 30vh);
+
+    background-color: rgba(11, 115, 115, 0.9);
 }
