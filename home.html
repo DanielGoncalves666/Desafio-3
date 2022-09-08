@@ -9,12 +9,14 @@
     <body>
         <script src="script.js"></script>
         <header>
-            <img id="logotipo" src="imagens/logotipo.png"/>
-            <button id="enviar" onclick="abrirFormulario()">
-                <img src="Icones/enviar.png">
-                <p>Envie sua receita</p>
-            </button>
-            <input type="text" placeholder="Pesquisa" name="Pesquisa">
+            <div id="headerElements">
+                <img id="logotipo" src="imagens/logotipo.png"/>
+                <button id="enviar" onclick="abrirFormulario()">
+                    <img src="Icones/enviar.png">
+                    <p>Envie sua receita</p>
+                </button>
+                <input type="text" placeholder="Pesquisa" name="Pesquisa">
+            </div>
         </header>
         <section id="corpo">
             <div class="card">
@@ -23,7 +25,7 @@
                     <img src="Icones/relogio.png">
                     <p>20 min</p>
                 </div>
-                <button class="verReceita"><a href="">Ver Receita</a></button>
+                <a href="" class="verReceita"><button>Ver Receita</button></a>
             </div>
             <div class="card">
                 <img src="">
@@ -31,7 +33,7 @@
                     <img src="">
                     <p></p>
                 </div>
-                <button class="verReceita"><a href="">Ver Receita</a></button>
+                <a href="" class="verReceita"><button>Ver Receita</button></a>
             </div>
             <div class="card">
                 <img src="">
@@ -39,7 +41,7 @@
                     <img src="">
                     <p></p>
                 </div>
-                <button class="verReceita"><a href="">Ver Receita</a></button>
+                <a href="" class="verReceita"><button>Ver Receita</button></a>
             </div>
             <div class="card">
                 <img src="">
@@ -47,7 +49,7 @@
                     <img src="">
                     <p></p>
                 </div>
-                <button class="verReceita"><a href="">Ver Receita</a></button>
+                <a href="" class="verReceita"><button>Ver Receita</button></a>
             </div>
         </section>
         <footer>
@@ -59,18 +61,28 @@
         </footer>
         <section id="modal">
             <div id="formulario">
-                <p>Nome</p>
-                <input type="text">
-                <p>Sobrenome</p>
-                <input type="text">
-                <p>Nome da Receita</p>
-                <input type="text">
-                <p>Insira uma imagem</p>
-                <input type="image">
-                <p>Digite a receita e seu modo de preparo e ingredientes</p>
-                <input type="text">
+                <div>
+                    <p>Nome</p>
+                    <input type="text" class="caixaTextoPequena">
+                </div>
+                <div>
+                    <p>Sobrenome</p>
+                    <input type="text" class="caixaTextoPequena">
+                </div>
+                <div>
+                    <p>Nome da Receita</p>
+                    <input type="text" class="caixaTextoPequena">
+                </div>
+                <div id="inputImagem">
+                    <p>Insira uma imagem</p>
+                    <input type="file" accept="image/*" placeholder="Input">
+                </div>
+                <div id="inputPreparo">
+                    <p>Digite a receita e seu modo de preparo e ingredientes</p>
+                    <input type="text" id="caixaTextoGrande">
+                </div>
 
-                <button onclick="fecharFormulario()">Enviar</button>
+                <button id="btnFormulario" onclick="fecharFormulario()">Enviar</button>
             </div>
         </section>
     </body>

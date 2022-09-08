@@ -3,6 +3,11 @@ body{
     background-color:#F2F2F2;
 }
 
+#headerElements{
+    display: block;
+    height: 100%;
+}
+
 /*Header*/
 header{
     background-color: #0B7373;
@@ -22,7 +27,7 @@ header{
     left: 20px;
 }
 
-header input{
+#headerElements input{
     height: 75%;
     width: 15%;
 
