@@ -109,8 +109,8 @@
 
     border-radius: 20px;
 
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
+    left: 130px;
 }
 
 #blockmenor2{
@@ -125,8 +125,8 @@
 
     border-radius: 20px;
 
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
+    left: 30px;
 }
 
 /*Titulo dos blocos aqua q aparecem no campo prato*/
