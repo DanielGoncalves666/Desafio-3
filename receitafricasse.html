@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fricassé de Frango</title>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet"/>
+        <link href="struct.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <header>
+            <div id="headerElements">
+                <img id="logotipo" src="imagens/logotipo.png"/>
+                <input type="text" placeholder="Pesquisa" name="Pesquisa">
+                <a href="home.html" class="voltar">
+                    <button class="voltar">
+                        <img src="Icones/retornar.png"> 
+                    </button>
+                </a>
+            </div>
+        </header>
+        
+        <section id="corpo">
+            
+            <!-- PRATO-->
+            <section class="conteudo">
+                <h4 class="nomecomida">Fricassé de Frango</h4>
+                <img id="img1" src="imagens/receita-fricasse-de-frango.jpg">
+              
+                <section id="info">
+                    <div id="blockmenor">
+                        <img class="iconesprato" src="Icones/relogio.png">
+                        <h1 class="titleblockmenor">Tempo de Preparo</h1>
+                        <p class="textobaixo">30 minutos</p>
+                    </div>
+                    <div id="blockmenor2">
+                        <img class="iconesprato" src="Icones/porcoes.png">
+                        <h1 class="titleblockmenor">Número de Porções</h1>
+                        <p class="textobaixo">5 porções </p>
+                    </div>
+                </section>
+            </section>
+
+            <!-- INGREDIENTES-->
+            
+            <section class="conteudoing">
+                <h4 class="nomecomida">Fricassé de Frango</h4>
+                
+                <section id="ingreInfo">
+                    <img class="iconescentrais" src="Icones/ingredientes.png">
+                    <h2 class="titulosec">  Ingredientes </h2>
+                </section>
+
+                <ul id="listaing">
+                    <br><br><br><li>1 lata de creme de leite</li>
+                    <br><li>1 lata de milho verde</li>
+                    <br><li>1 copo de requeijão cremoso</li>
+                    <br><li>100 g de azeitona sem caroço</li>
+                    <br><li>200 g de mussarela fatiada</li>
+                    <br><li>2 peitos de frango desfiados</li>
+                    <br><li>100 g de batata palha</li>
+                    <br><li>1 xícara de água</li>
+                    <br><li>1 pitada de sal</li>
+                </ul> 
+            </section>
+
+            <!-- Modo de Preparo -->
+            <section class="conteudoprep">
+                <h4 class="nomecomida">Fricassé de Frango</h4>
+    
+                <ol id="mododepreparo">
+                  <li>Bata no liquidificador o milho, o requeijão, o creme de leite e a água.</li>
+                  <li>Refogue o creme do liquidificador com o frango desfiado, as azeitonas e o sal até ficar com uma textura espessa.</li>
+                  <li>Coloque o refogado numa assadeira, cubra com mussarela e espalhe a batata palha por cima.</li>
+                  
+                  <li>Leve ao forno até borbulhar.</li>
+                  <li>Sirva com arroz branco.</li>
+                  <li>Bom apetite!</li>
+                </ol>
+            </section>
+
+            <!-- SELECT-->
+            <select id="seletor" onchange="mudaselect(this.value)">
+                <option value="1" selected>Prato</option>
+                <option value="2">Ingredientes</option>
+                <option value="3">Modo de preparo</option>
+            </select>
+        </section>
+
+        <footer>
+            <div>
+                <p>Feito com</p>
+                <img src="Icones/gostei.png"/>
+                <p>por Daniel & Rafael</p>
+            </div>
+        </footer>
+    </body>
+</html>

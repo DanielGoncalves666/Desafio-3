@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Macarrão com Cream Cheese</title>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet"/>
+        <link href="struct.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <header>
+            <div id="headerElements">
+                <img id="logotipo" src="imagens/logotipo.png"/>
+                <input type="text" placeholder="Pesquisa" name="Pesquisa">
+                <a href="home.html" class="voltar">
+                    <button class="voltar">
+                        <img src="Icones/retornar.png"> 
+                    </button>
+                </a>
+            </div>
+        </header>
+        
+        <section id="corpo">
+            
+            <!-- PRATO-->
+            <section class="conteudo">
+                <h4 class="nomecomida">Macarrão com Cream Cheese</h4>
+                <img id="img1" src="imagens/macarrao.jpg">
+              
+                <section id="info">
+                    <div id="blockmenor">
+                        <img class="iconesprato" src="Icones/relogio.png">
+                        <h1 class="titleblockmenor">Tempo de Preparo</h1>
+                        <p class="textobaixo">40 minutos</p>
+                    </div>
+                    <div id="blockmenor2">
+                        <img class="iconesprato" src="Icones/porcoes.png">
+                        <h1 class="titleblockmenor">Número de Porções</h1>
+                        <p class="textobaixo">4 porções </p>
+                    </div>
+                </section>
+            </section>
+
+            <!-- INGREDIENTES-->
+            
+            <section class="conteudoing">
+                <h4 class="nomecomida">Macarrão com Cream Cheese</h4>
+                
+                <section id="ingreInfo">
+                    <img class="iconescentrais" src="Icones/ingredientes.png">
+                    <h2 class="titulosec">  Ingredientes </h2>
+                </section>
+
+                <ul id="listaing">
+                    <br><br><br><li>500 g de penne cozido al dente</li>
+                    <br><li>2 colheres (sopa) de azeite</li>
+                    <br><li>2 dentes de alho picados</li>
+                    <br><li>1 lata de molho de tomate</li>
+                    <br><li>200 g de cream cheese SCALA</li>
+                    <br><li>1 lata de creme de leite</li>
+                    <br><li>300 g de presunto picado</li>
+                    <br><li>300 g de mussarela picada</li>
+                    <br><li>Queijo parmesão ralado</li>
+                    <br><li>Sal e pimenta a gosto</li>
+                </ul> 
+            </section>
+
+            <!-- Modo de Preparo -->
+            <section class="conteudoprep">
+                <h4 class="nomecomida">Macarrão com Cream Cheese</h4>
+    
+                <ol id="mododepreparo">
+                    <li>Em uma panela aqueça o azeite e doure o alho.</li>
+                    <li>Junte o molho de tomate, o requeijão e o creme de leite.</li>
+                    <li>Tempere com sal e pimenta.</li>
+                    
+                    <li>Deixe no fogo brando até o requeijão derreter.</li>
+                    <li>Desligue o fogo e misture a mussarela e o presunto picados.</li>
+                    <li>Em um refratário coloque o macarrão, despeje o molho e polvilhe o queijo ralado.</li>
+                    <li>Deixe por 20 minutos em forno pré-aquecido.</li>
+                    <li>Bom apetite!</li>
+                </ol>
+            </section>
+
+            <!-- SELECT-->
+            <select id="seletor" onchange="mudaselect(this.value)">
+                <option value="1" selected>Prato</option>
+                <option value="2">Ingredientes</option>
+                <option value="3">Modo de preparo</option>
+            </select>
+        </section>
+
+        <footer>
+            <div>
+                <p>Feito com</p>
+                <img src="Icones/gostei.png"/>
+                <p>por Daniel & Rafael</p>
+            </div>
+        </footer>
+    </body>
+</html>

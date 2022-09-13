@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nhoque de Batata</title>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet"/>
+        <link href="struct.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <header>
+            <div id="headerElements">
+                <img id="logotipo" src="imagens/logotipo.png"/>
+                <input type="text" placeholder="Pesquisa" name="Pesquisa">
+                <a href="home.html" class="voltar">
+                    <button class="voltar">
+                        <img src="Icones/retornar.png"> 
+                    </button>
+                </a>
+            </div>
+        </header>
+        
+        <section id="corpo">
+            
+            <!-- PRATO-->
+            <section class="conteudo">
+                <h4 class="nomecomida">Nhoque de Batata</h4>
+                <img id="img1" src="imagens/nhoque.jpg">
+              
+                <section id="info">
+                    <div id="blockmenor">
+                        <img class="iconesprato" src="Icones/relogio.png">
+                        <h1 class="titleblockmenor">Tempo de Preparo</h1>
+                        <p class="textobaixo">60 minutos</p>
+                    </div>
+                    <div id="blockmenor2">
+                        <img class="iconesprato" src="Icones/porcoes.png">
+                        <h1 class="titleblockmenor">Número de Porções</h1>
+                        <p class="textobaixo">6 porções </p>
+                    </div>
+                </section>
+            </section>
+
+            <!-- INGREDIENTES-->
+            
+            <section class="conteudoing">
+                <h4 class="nomecomida">Nhoque de Batata</h4>
+                
+                <section id="ingreInfo">
+                    <img class="iconescentrais" src="Icones/ingredientes.png">
+                    <h2 class="titulosec">  Ingredientes </h2>
+                </section>
+
+                <ul id="listaing">
+                    <br><br><br><li>1 kg farinha de trigo</li>
+                    <br><li>6 Batatas médias;</li>
+                    <br><li>1 xícara de farinha de trigo;</li>
+                    <br><li>sal a gosto;</li>
+                    <br><li>1 lata de molho de tomate;</li>
+                    <br><li>1/2 Cebola ralada;</li>
+                    <br><li>1 colher de sopa de azeite;</li>
+                    <br><li>2 tabletes de caldo de carne;</li>
+                    <br><li>1/2 kg de carne moída;</li>
+                    <br><li>1 pacote de queijo ralado;</li>
+                </ul> 
+            </section>
+
+            <!-- Modo de Preparo -->
+            <section class="conteudoprep">
+                <h4 class="nomecomida">Nhoque de Batata</h4>
+    
+                <ol id="mododepreparo">
+                    <li>Cozinhe as batatas, em água, até que estejam macias.</li>
+                    <li>Descasque-as e passe pelo espremedor ainda quentes.</li>
+                    <li>Vá acrescentando a farinha aos poucos e o sal, amasse bem.</li>
+                    
+                    <li>Corte cada rolinho em pedaços de mais ou menos 2 cm.</li>
+                    <li>Coloque água fria em uma bacia com um escorredor dentro, retire os nhoques já cozidos e coloque-os no escorredor para dar choque térmico.</li>
+                    <li>Repita o processo até toda massa estar cozida.</li>
+                    <li>MOLHO:</li>
+                    <li>Pique a cebola, bem miudinha e, em uma panela, frite com azeite.</li>
+                    <li>Acrescente a carne e os tabletes de caldo de carne.</li>
+                    <li>Mexa bem, quando a carne já estiver cozida, acrescente o molho e deixe cozinhar por mais 4 min.</li>
+                    <li>Despeje-o sobre o nhoque, salpique queijo em cima e leve ao forno para gratinar, sirva quente e bom apetite!</li>
+                </ol>
+            </section>
+
+            <!-- SELECT-->
+            <select id="seletor" onchange="mudaselect(this.value)">
+                <option value="1" selected>Prato</option>
+                <option value="2">Ingredientes</option>
+                <option value="3">Modo de preparo</option>
+            </select>
+        </section>
+
+        <footer>
+            <div>
+                <p>Feito com</p>
+                <img src="Icones/gostei.png"/>
+                <p>por Daniel & Rafael</p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -24,19 +24,35 @@
 }
 
 /*Section corpo*/
+
 #corpo{
-    height: 80%;
+    height: 75%;
     width: 70%;
 
     position: absolute;
-    top: 12%;
+    top: 14.5%;
     left: 15%;
 
     background-color:#192939;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #F2F2F2;
     
     /*display: grid;
     grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: 0.2fr 3fr;*/
+}
+
+.conteudo{
+    display: block;
+}
+
+.conteudoing{
+    display: none;
+}
+
+.conteudoprep{
+    display: none;
 }
 
 /*Nome da comida em cima de cada sec*/
@@ -49,127 +65,145 @@
 #seletor{
     background-color: #0B7373;
     color: white;
-    position: relative;
-    top: 90px;
-    left: 1000px;
+    
+    position: absolute;
+    right: 5%;
+    top: 3%;
+
 }
 
 #img1{
+    display: block;
+
     position: relative;
-    left: 18px;
     top: 40px;
+    
+    width: auto;
+    height: 350px;  
+
+    margin-left: auto;
+    margin-right: auto;
+
     border-radius: 20px;
-    width: 650px;
-    height: 400px;  
 }
 
+#info{
+    display: grid;
+    position: absolute;
+    bottom: 3%;
+
+    width: 100%;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+#blockmenor{
+    display: block;
+    grid-column: 1 / 2;
+
+    width: 335px;
+    height: 50px;
+
+    background-color: #0B7373;
+    color: white;
+
+    border-radius: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#blockmenor2{
+    display: block;
+    grid-column: 2 / 3;
+
+    width: 320px;
+    height: 50px;
+
+    background-color: #0B7373;
+    color: white;
+
+    border-radius: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*Titulo dos blocos aqua q aparecem no campo prato*/
 .titleblockmenor{
     position: relative;
-    top: -55px;
-    left: 20px;
+    top: -110%;
+    left: 30%;
 }
 /*icones pequenos*/
 .iconesprato{
     position: relative;
     top: 10px;
-    left: -90px;
+    left: 10%;
     
 }
 /*Valores variaveis dos blocos aqua*/
 .textobaixo{
     color: white;
     position: relative;
-    top: -70px;
-    left: 10px;
+    top: -140%;
+    left: 30%;
 }
 
-
-#corpo{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #F2F2F2;
-    text-align: center;
-    text-decoration-line: underline;
-    text-decoration-style: solid; /* this is default */
-    
+#ingreInfo{
+    position: absolute;
+    left: 40%;
+    top: 3%;
 }
 
-#blockmenor{
-    width: 320px;
-    height: 50px;
-
-    background-color: #0B7373;
-    color: white;
-
-    position: relative;
-    top: 50px;
-    left: 160px;
-
-    border-radius: 20px;
+.iconescentrais{
+    width: 40px;
 }
 
-
-#blockmenor2{
-    width: 320px;
-    height: 50px;
-
-    background-color: #0B7373;
-    color: white;
-
-
-    position: relative;
-    left: 500px;
-
-    border-radius: 20px;
+.titulosec{
+    position: absolute;
+    top: -10%;
+    left: 130%;    
 }
+
 
 #listaing{
     position: relative;
-    left: 200px;
+    left: 10%;
 
     text-align: left;
     
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    font-size: large;
+    font-size:medium;
 }
-
-
-.titulosec{
-    position: absolute;
-    top: 25px;
-    left: 360px; 
-}
-
-.iconescentrais{
-    position: absolute;
-    left: 270px;
-    top: 10px;
-
-    width: 40px ;
-
-}
-
 
 #mododepreparo{
-    position: fixed;
-    top: 160px;
+    position: absolute;
+    top: 60px;
+    left: 280px;
+    margin: 0;
+    padding: 0;
 
-    text-align: left;
-    left: 400px;
+    list-style-type: none;
+    counter-reset: apples;
+}
+
+#mododepreparo li:before {
+    position: relative;
+    left: -150px;
+
+    content: counter(apples);
+    counter-increment: apples;
+    font-family: sans-serif;
+    color: white;
+
+    font-weight: bold;
+    font-size: 38px;
 }
 
 #headersec{
     border: 1px solid black;
     display: block;
     width: 400px;
-}
-
-.conteudoing{
-    display: none;
-}
-
-.conteudoprep{
-    display: none;
 }

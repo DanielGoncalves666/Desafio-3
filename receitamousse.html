@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mousse de Limão totoso</title>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet"/>
+        <link href="struct.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <header>
+            <div id="headerElements">
+                <img id="logotipo" src="imagens/logotipo.png"/>
+                <input type="text" placeholder="Pesquisa" name="Pesquisa">
+                <a href="home.html" class="voltar">
+                    <button class="voltar">
+                        <img src="Icones/retornar.png"> 
+                    </button>
+                </a>
+            </div>
+        </header>
+        
+        <section id="corpo">
+            
+            <!-- PRATO-->
+            <section class="conteudo">
+                <h4 class="nomecomida">Mousse de Limão totoso</h4>
+                <img id="img1" src="imagens/mousse.jpg">
+              
+                <section id="info">
+                    <div id="blockmenor">
+                        <img class="iconesprato" src="Icones/relogio.png">
+                        <h1 class="titleblockmenor">Tempo de Preparo</h1>
+                        <p class="textobaixo">10 minutos</p>
+                    </div>
+                    <div id="blockmenor2">
+                        <img class="iconesprato" src="Icones/porcoes.png">
+                        <h1 class="titleblockmenor">Número de Porções</h1>
+                        <p class="textobaixo">10 porções </p>
+                    </div>
+                </section>
+            </section>
+
+            <!-- INGREDIENTES-->
+            
+            <section class="conteudoing">
+                <h4 class="nomecomida">Mousse de Limão totoso</h4>
+                
+                <section id="ingreInfo">
+                    <img class="iconescentrais" src="Icones/ingredientes.png">
+                    <h2 class="titulosec">  Ingredientes </h2>
+                </section>
+
+                <ul id="listaing">
+                    <br><br><br><li>1 lata de leite condensado</li>
+                    <br><li>1 lata de creme de leite</li>
+                    <br><li>1/2 xícara de suco de limão (esse suco é puro mesmo, sem água, é só espremer o limão)</li>
+                </ul> 
+            </section>
+
+            <!-- Modo de Preparo -->
+            <section class="conteudoprep">
+                <h4 class="nomecomida">Mousse de Limão totoso</h4>
+    
+                <ol id="mododepreparo">
+                    <li>Coloque no liquidificador o creme de leite (com soro mesmo) e o leite condensado.</li>
+                    <li>Bata um pouco e depois vá acrescentando o suco do limão, aos poucos.</li>
+                    <li>Ele vai ficar bem consistente, leve à geladeira.</li>
+                    <li>Bom apetite!</li>
+                </ol>
+            </section>
+
+            <!-- SELECT-->
+            <select id="seletor" onchange="mudaselect(this.value)">
+                <option value="1" selected>Prato</option>
+                <option value="2">Ingredientes</option>
+                <option value="3">Modo de preparo</option>
+            </select>
+        </section>
+
+        <footer>
+            <div>
+                <p>Feito com</p>
+                <img src="Icones/gostei.png"/>
+                <p>por Daniel & Rafael</p>
+            </div>
+        </footer>
+    </body>
+</html>
