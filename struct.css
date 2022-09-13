@@ -1,0 +1,175 @@
+/* Header*/
+
+#headerElements input{
+    right: 35%;
+    top: 12%;
+}
+
+.voltar{
+    width: 60px;
+
+    position: absolute;
+    left: 90%;
+    top: 20%;
+
+    background-color: #0B7373;
+}
+
+#voltar img{
+    height: 40px;
+    width: 40px;
+
+    display: grid;
+    margin: auto ;
+}
+
+/*Section corpo*/
+#corpo{
+    height: 80%;
+    width: 70%;
+
+    position: absolute;
+    top: 12%;
+    left: 15%;
+
+    background-color:#192939;
+    
+    /*display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.2fr 3fr;*/
+}
+
+/*Nome da comida em cima de cada sec*/
+.nomecomida{
+    position: absolute;
+    top: -5px;
+    left: 80px; 
+}
+
+#seletor{
+    background-color: #0B7373;
+    color: white;
+    position: relative;
+    top: 90px;
+    left: 1000px;
+}
+
+#img1{
+    position: relative;
+    left: 18px;
+    top: 40px;
+    border-radius: 20px;
+    width: 650px;
+    height: 400px;  
+}
+
+
+/*Titulo dos blocos aqua q aparecem no campo prato*/
+.titleblockmenor{
+    position: relative;
+    top: -55px;
+    left: 20px;
+}
+/*icones pequenos*/
+.iconesprato{
+    position: relative;
+    top: 10px;
+    left: -90px;
+    
+}
+/*Valores variaveis dos blocos aqua*/
+.textobaixo{
+    color: white;
+    position: relative;
+    top: -70px;
+    left: 10px;
+}
+
+
+#corpo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #F2F2F2;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style: solid; /* this is default */
+    
+}
+
+#blockmenor{
+    width: 320px;
+    height: 50px;
+
+    background-color: #0B7373;
+    color: white;
+
+    position: relative;
+    top: 50px;
+    left: 160px;
+
+    border-radius: 20px;
+}
+
+
+#blockmenor2{
+    width: 320px;
+    height: 50px;
+
+    background-color: #0B7373;
+    color: white;
+
+
+    position: relative;
+    left: 500px;
+
+    border-radius: 20px;
+}
+
+#listaing{
+    position: relative;
+    left: 200px;
+
+    text-align: left;
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+.titulosec{
+    position: absolute;
+    top: 25px;
+    left: 360px; 
+}
+
+.iconescentrais{
+    position: absolute;
+    left: 270px;
+    top: 10px;
+
+    width: 40px ;
+
+}
+
+
+#mododepreparo{
+    position: fixed;
+    top: 160px;
+
+    text-align: left;
+    left: 400px;
+}
+
+#headersec{
+    border: 1px solid black;
+    display: block;
+    width: 400px;
+}
+
+.conteudoing{
+    display: none;
+}
+
+.conteudoprep{
+    display: none;
+}

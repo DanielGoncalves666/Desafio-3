@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagina de Receitas</title>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet"/>
+        <link href="struct.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <header>
+            <div id="headerElements">
+                <img id="logotipo" src="imagens/logotipo.png"/>
+                <input type="text" placeholder="Pesquisa" name="Pesquisa">
+                <a href="home.html" class="voltar">
+                    <button class="voltar">
+                        <img src="Icones/retornar.png"> 
+                    </button>
+                </a>
+            </div>
+        </header>
+        
+        <!-- SELECT-->
+        
+        <section id="corpo">
+            <!-- PRATO-->
+            <section class="conteudo">
+                <h4 class="nomecomida">Nhoque de Batata</h4>
+                <img id="img1" src="imagens/nhoque.jpg">
+              
+                <section id="blockmenor">
+                    <img class="iconesprato" src="Icones/relogio.png">
+                    <h1 class="titleblockmenor">Tempo de Preparo</h1>
+                    <p class="textobaixo">45 minutos</p>
+                </section>
+                <section id="blockmenor2">
+                    <img class="iconesprato" src="Icones/porcoes.png">
+                    <h1 class="titleblockmenor">Número de Porções</h1>
+                    <p class="textobaixo">4 porções </p>
+                </section>
+            </section>
+
+            <!-- INGREDIENTES-->
+            
+            <section class="conteudoing">
+                <h4 class="nomecomida">Nhoque de Batata</h4>
+                <img class="iconescentrais" src="Icones/ingredientes.png">
+                <p class="titulosec">  Ingredientes </p>
+              
+                <ul id="listaing">
+                    <br><br><br><li>1 kg farinha de trigo</li>
+                    <br><li>PAO;</li>
+                    <br><li>Farinah de trigo;</li>
+                    <br><li>Manteiga;</li>
+                    <br><li>Ingredientes;</li>
+                    <br><li>Ingredientes;</li>
+                    <br><li>Ingredientes;</li>
+                    <br><li>Ingredientesssssss;</li>
+                    <br><li>Ingredientes;</li>
+                    <br><li>Ingredientes;</li>
+                    <br><li>Ingredientes;</li>
+                </ul> 
+            </section>
+
+            <!-- Modo de Preparo -->
+            <section class="conteudoprep">
+                <h4 class="nomecomida">Nhoque de Batata</h4>
+    
+                <ol id="mododepreparo">
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Milk</li>
+                </ol>
+            </section>
+        </section>
+
+        <select id="seletor" onchange="mudaselect(this.value)">
+            <option value="1" selected>Prato</option>
+            <option value="2">Ingredientes</option>
+            <option value="3">Modo de preparo</option>
+        </select>
+
+        <footer>
+            <div>
+                <p>Feito com</p>
+                <img src="Icones/gostei.png"/>
+                <p>por Daniel & Rafael</p>
+            </div>
+        </footer>
+    </body>
+</html>
